@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Front-end</a>
+
+        <!-- 漢堡清單 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#learn" class="nav-link">Learnning</a>
+            </li>
+            <li class="nav-item">
+              <a href="#questions" class="nav-link">Questions</a>
+            </li>
+            <li class="nav-item">
+              <a href="#instructors" class="nav-link">Instrutors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>成為 <br> <span class="text-warning">Junior前端工程師</span></h1>
+            <p class="lead my-4">
+              期許在短期前端能力想要達到的目標
+            </p>
+            <!-- <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start The Enrollment</button> -->
+          </div>
+          <img
+            class="img-fluid w-50 d-none d-sm-block"
+            src="./images/showcase.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- News letter -->
+    <section class="bg-primary text-light p-5">
+      <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+          <h3 class="mb-3 mb-md-0">Html、CSS、Javascript、jQuery、React、Ajax、Git、npm...</h3>
+
+          <!-- <div class="input-group news-input">
+            <input type="text" class="form-control" placeholder="Skills" />
+            <button class="btn btn-dark btn-lg" type="button">Button</button>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- cardone -->
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">規劃能力</h3>
+                <p class="card-text">
+                  合作的目標更聚焦、產品更加完整、減少重複建設
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- cardtwo -->
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">解決問題能力</h3>
+                <p class="card-text">
+                  善用Google，能嘗試獨立解決遇到的問題
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- cardthree -->
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">溝通能力</h3>
+                <p class="card-text">
+                  能清楚地與合作人溝通合作，找出對產品最好的方案
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- learning secionts -->
+    <section id="learn" class="p-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="./images/fundamentals.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Learn The Fundamentals</h2>
+            <p class="lead">
+              作為前端最基本的三大基礎技能
+            </p>
+            <p>
+              HTML是網站的骨架、CSS是網站的衣服、JS是讓網站可以做動作，因此要做一個好的網站，這三個技能缺一不可。
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Advanced-->
+    <section id="learn" class="p-5 bg-dark text-light">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-5">
+            <h2>Learn React</h2>
+            <p class="lead">
+              隨著科技進步，網站專案的規模逐漸增大、複雜而出現的框架。
+            </p>
+            <p>
+              因為框架，改善了過去程式碼的管理困難 <br>
+              因為框架，改善了過去頻繁修改DOM讓效能低落。
+            </p>
+            <a href="#" class="btn btn-light mt-3">
+              <i class="bi bi-chevron-right"></i> Read More
+            </a>
+          </div>
+          <div class="col-md">
+            <img src="./images/react.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="questions" >
+      <div class="container">
+        <h2 class="text-center mb-4">常見問題</h2>
+        <div class="accordion accordion-flush" id="question">
+          <!-- item one -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                什麼是前端?
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#question"
+            >
+              <div class="accordion-body">
+                網站的「前端」是與用戶直接交互的部分，包括你在瀏覽網頁時接觸的所有視覺內容–從字體到顏色，以及下拉菜單和側邊欄。這些視覺內容，都是由瀏覽器解析、處理、渲染相關HTML、CSS、Javascript 文件後呈現而來。
+              </div>
+            </div>
+          </div>
+          <!-- item two -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+               為什麼想做前端?
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                一直覺得，出社會工作，如果對工作沒有熱情還要做一輩子那是痛苦的，前端這個工作很符合我對喜歡工作的定義。 <br>
+                可以與人溝通合作 <br>
+                有工作上的反饋 <br>
+                將所學及時發揮到工作上 <br>
+                與時俱進的技能 
+              </div>
+            </div>
+          </div>
+          <!-- item three -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+              前端學到現在遇到的困難?
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                我覺得我目前遇過最大的困難不會是學習上的困難，而是知識恐慌，在網路上看到太多知識要去學習，會很慌張但卻又興奮，很想要趕快學起來，目前最好的方法就是每天指定明確的學習目標就不會那麼慌張了。
+              </div>
+            </div>
+          </div>
+          <!-- item four -->
+          <!-- <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                How do I sign up?
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolores nam quo necessitatibus dicta minus est explicabo deleniti, autem pariatur tempora aliquid ipsa exercitationem perspiciatis optio odio porro quasi quos quam quibusdam distinctio ipsam vitae? Fuga tempora iusto, soluta libero illum nam quae ea corporis ducimus aliquid facilis, rem id!
+              </div>
+            </div>
+          </div> -->
+          <!-- item five -->
+          <!-- <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                Do you help me find a job?
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam dolores nam quo necessitatibus dicta minus est explicabo deleniti, autem pariatur tempora aliquid ipsa exercitationem perspiciatis optio odio porro quasi quos quam quibusdam distinctio ipsam vitae? Fuga tempora iusto, soluta libero illum nam quae ea corporis ducimus aliquid facilis, rem id!
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- instroctors -->
+    <section id="instructors" class="bg-primary">
+      <div class="container">
+        <h2 class="text-center text-white pb-5">
+          前端工具學習
+        </h2>
+        <!-- <p class="lead text-center text-white mb-5">Lorem, ipsum dolor sit amet consectetur adipisicing el it. Dignissimos itaque sunt numquam alias adipisci eaque!</p> -->
+        <div class="row g-4">
+
+          <!-- person1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./images/github.jpg" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">GitHub</h3>
+                <p class="card-text">開發者能公開專案，任何人都能存取、使用、甚至對專案的內容做出修改，而專案作者能對這些改動用 Git (等等會介紹的版本控制工具)來進行控管，進而達成一種「共同創作」的理念。</p>
+                <!-- <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <!-- person2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./images/node.png" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">Node.js</h3>
+                <p class="card-text">Node.js 是能夠在伺服器端運行 JavaScript 的開放原始碼、跨平台 JavaScript 執行環境。</p>
+                <!-- <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <!-- person3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./images/bootstrap.png" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">Bootstrap</h3>
+                <p class="card-text">作為CSS的框架，有更完善的檔案、提高開發效率以及更便於維護。</p>
+                <!-- <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+          <!-- pic 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="./images/webpack.png" class="rounded-circle mb-3" alt="">
+                <h3 class="card-title mb-3">Webpack</h3>
+                <p class="card-text">他是在node.js的環境下執行的工具，也可以透過npm下載其他webpack的套件來使用。他是一個幫助程式碼解析成瀏覽器可以閱讀的格式、統一開發環境、可以把引入多個source時打包成一個檔案</p>
+                <!-- <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact & map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4">推薦學習網站</h2>
+            <ul class="list-group list-group-flush lead">
+              <li class="list-group item">
+                <span class="fw-bold">iT幫邦忙-裡面有很多大神會分享各種技術上的資訊，也能向他們提出疑問。</span><a href="https://ithelp.ithome.com.tw/">https://ithelp.ithome.com.tw/</a>
+              </li>
+              <li class="list-group item">
+                <span class="fw-bold">runoob-很清楚的分類能清楚選擇想要學習的東西。</span><a href="https://www.runoob.com">https://www.runoob.com</a>
+              </li>
+              <li class="list-group item">
+                <span class="fw-bold">前端精神時光屋-有很多設計版面可以練習。</span><a href="https://challenge.thef2e.com/">https://challenge.thef2e.com/</a>
+              </li>
+              <li class="list-group item">
+                <span class="fw-bold">CSS可樂-有很多CSS大神coke做的CSS技巧</span><a href="http://csscoke.com/">http://csscoke.com/</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="col-md">
+            <div id="map"></div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy;2021 Frontend</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="enrollLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <p class="lead">Fill out this form and we will get back to you.</p>
+           <form>
+             <div class="mb-3">
+               <label for="first-name" class="col-form-label">First Name:</label>
+               <input type="text" class="form-control" id="first-name">
+             </div>
+             <div class="mb-3">
+              <label for="last-name" class="col-form-label">Last Name:</label>
+              <input type="text" class="form-control" id="last-name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="E-ail">
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="col-form-label">Phone:</label>
+              <input type="text" class="form-control" id="Phone">
+            </div>
+           </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibWlsa2VkZHkxIiwiYSI6ImNrcnlyMTkxeTEycG8yd21pdjI3bzdmOGkifQ.4hPttsRxVrLQTAM35-IZ8Q';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center:[121.564558, 25.03746],
+      zoom:18
+      });
+      </script>
+  </body>
+</html>

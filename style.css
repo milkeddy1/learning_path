@@ -1,0 +1,24 @@
+* {
+  font-family: 微軟正黑體;
+}
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+#map {
+  width: 100%;
+  height: 100%;
+  border: 10px;
+}
+#questions {
+  padding: 5rem;
+}
+#instructors {
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
